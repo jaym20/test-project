@@ -20,6 +20,8 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { MatListModule } from '@angular/material/list';
+import { LoginComponent } from './login/login.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { MatListModule } from '@angular/material/list';
     FooterComponent,
     AboutComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,11 @@ import { MatListModule } from '@angular/material/list';
     MatGridListModule,
     MatCardModule,
     MatButtonModule,
-    MatListModule
+    MatListModule,
+    MatDialogModule
+  ],
+  entryComponents: [
+    LoginComponent
   ],
   providers: [DishService, PromotionService, LeaderService],
   bootstrap: [AppComponent]
