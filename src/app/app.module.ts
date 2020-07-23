@@ -1,3 +1,4 @@
+import { LeaderService } from './services/leader.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -42,7 +43,7 @@ import { MatListModule } from '@angular/material/list';
     MatButtonModule,
     MatListModule
   ],
-  providers: [DishService, PromotionService],
+  providers: [DishService, PromotionService, LeaderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
